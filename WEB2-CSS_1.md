@@ -64,14 +64,15 @@ HTML은 웹의 정보를 전달하기에 너무나 좋은 언어이다. 그럼�
 ### 간단 요약
 - 선택자(selector) + 선언(declaration)
 - style 태그, style 속성
-- a 태그의 밑줄 없애기(선택자 사용) $\rightarrow$ text-decoration: none  
-  특정 a 태그에 대해 밑줄 생기기(속성 사용) $\rightarrow$  text-decoration:underline
+- a 태그의 밑줄 없애기(선택자 사용) ==> text-decoration: none  
+  특정 a 태그에 대해 밑줄 생기기(속성 사용) ==> text-decoration:underline
 <br>
 
 
+style 태그에서 특정 태그에 대해 범위를 선택할 수 있는데 이를 "선택자"라고 한다. 아래의 코드는, a 태그에 대한 선택자를 표현하고 있다. 또한, 선택자 안의 코드를 "declaration"이라고 한다. color는 "property", black은 "value"를 의미한다.
 ```HTML
 (선택자, selector) + 선언(declaration)
-style 태그에서 특정 태그에 대해 범위를 선택할 수 있는데 이를 "선택자"라고 한다. 아래의 코드는, a 태그에 대한 선택자를 표현하고 있다. 또한, 선택자 안의 코드를 "declaration"이라고 한다. color는 "property", black은 "value"를 의미한다.
+
 
 <style>
   a {
@@ -92,7 +93,7 @@ style 태그에서 특정 태그에 대해 범위를 선택할 수 있는데 이
     }
 </style>
 ```
-text-decoration: none; $\rightarrow$ 밑줄 없애기
+text-decoration: none; ==> 밑줄 없애기
 <br>
 
 
@@ -124,13 +125,15 @@ style 속성을 사용하여 해당 a 태그에만 밑줄을 긋는다.
 <br>
 
 
-```HTML
+```
 (선택자, selector) + 선언(declaration)
 
 style 태그에서 특정 태그에 대해 범위를 선택할 수 있는데 이를 "선택자"라고 한다. 아래의 코드는, a 태그에 대한 선택자를 표현하고 있다.
 
 또한, 선택자 안의 코드를 "declaration"이라고 한다. color는 "property", black은 "value"를 의미한다.
+```
 
+```HTML
 <style>
   a {
       color:black;
