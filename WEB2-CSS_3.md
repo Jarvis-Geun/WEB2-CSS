@@ -112,5 +112,5 @@
 <br>
 
 
-![CSS-box model](CSS-boxmodel.png)
+![CSS-box model](WEB2-CSS_3_boxmodel.png)
 - `CSS box model`
