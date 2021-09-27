@@ -152,6 +152,8 @@
 - #grid ol 선택자 : grid라는 id의 하위 ol 태그를 지칭한다.
 <br>
 
+### 최종 이미지
+![grid 이미지](img/WEB2-CSS_4_2.jpg)
 
 ### Reference
 > https://opentutorials.org/module/3129/18322
