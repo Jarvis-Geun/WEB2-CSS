@@ -1,6 +1,6 @@
-## 2021.09.26(SUN) 생활코딩 WEB2-CSS 강의
+# 2021.09.26(SUN) 생활코딩 WEB2-CSS 강의
 
-### WEB2 CSS - 8. 박스 모델
+## WEB2 CSS - 8. 박스 모델
 
 - block level element : 화면 전체를 쓰는 태그. Ex) h1 태그
 - inline element : 자신의 컨텐츠의 크기만큼 가지는 태그. Ex) a 태그
