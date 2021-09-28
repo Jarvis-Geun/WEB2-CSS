@@ -46,7 +46,7 @@
 - NAVIGATION column은 150px로 고정되며, ARTICLE column은 1fr로 웹페이지의 크기에 따라 유동적으로 변한다.
 <br>
 
-### Grid 참고
+### grid 참고
 - grid는 최신 css 기술로 각 브라우저마다 grid를 사용할 수 있는지 알아볼 필요가 있다. 이러한 정보를 쉽게 정리해놓은 사이트가 [caniuse.com](https://caniuse.com/?search=grid)이다.
 
 
@@ -57,7 +57,7 @@
 
 ## WEB2 CSS - 12. 미디어 쿼리 소개
 
-## 간단 요약
+### 간단 요약
 - 반응형 디자인(responsive design)
 - media query
 <br>
@@ -109,8 +109,49 @@
     }
 </style>
 ```
-- @media(min-width: 800px) : width의 최소값이 800px이면 아무것도 출력하지 않는다.
-- @media(max-width: 800px) : width의 최대값이 800px이면 아무것도 출력하지 않는다.
+- @media(min-width: 800px) : width의 최소값이 800px인 범위에서 아무것도 출력하지 않는다. 다시 말해, screen width > 800px이면 웹페이지에 아무것도 출력하지 않는다.
+
+- @media(max-width: 800px) : width의 최대값이 800px인 범위에서 아무것도 출력하지 않는다. 다시 말해, screen width < 800px이면 웹페이지에 아무것도 출력하지 않는다.
+
+### Reference
+> https://opentutorials.org/module/3129/18323
+
+<br>
+
+## WEB2 CSS - 13. 미디어 쿼리 써먹기
+
+### 전체 코드
+> https://github.com/Jarvis-Geun/WEB2-CSS/blob/main/WEB2-CSS_5.html
+
+```CSS
+<style>
+    /* screen width < 800px */
+    @media(max-width: 800px) {
+        #grid {
+            display: block;
+        }
+        #grid ol {
+            border-right: none;
+        }
+        h1 {
+            border-bottom: none;
+        }
+    }
+</style>
+```
+width가 800px보다 작으면,  
+1. grid(id)는 block level element로 변한다.
+2. grid ol(id)의 오른쪽 실선이 사라진다.
+3. h1의 아래 실선이 사라진다.
+
+<br>
+
+### 미디어 쿼리 적용 전
+![미디어 쿼리 적용 전](img/WEB2-CSS_5_1.png)
+<br>
+
+### 미디어 쿼리 적용 후
+![미디어 쿼리 적용 후](img/WEB2-CSS_5_2.png)
 
 ### Reference
 > https://opentutorials.org/module/3129/18323
